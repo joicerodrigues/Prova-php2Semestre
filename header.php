@@ -12,7 +12,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="index.php"><img src="images/ico.png"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,7 +25,7 @@
           <a class="nav-link active" href="cadastro.php">Cadastrar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="cadastro.php">Atualizar</a>
+          <a class="nav-link active" aria-current="page" href="atualiza.php">Atualizar</a>
         </li>
       </ul>
       <form class="d-flex">

@@ -1,31 +1,54 @@
 <?php
-/*
-print_r($_POST);
-*/
-$nome = $_POST['nome'];
-$ra = $_POST['ra'];
-// echo $nome;
 
-// Parâmetros da conexão com o banco de dados
-$servername = 'localhost';
-$username = 'root';
-$password = '';
-$dbname = 'cadalunos';
-// Criando a conexão
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+class DataBaseService {
+    public $servername = 'localhost';
+    public $username = 'root';
+    public $password = '';
+    public $dbname = 'cadalunos' ;
+
+    //função para conexão
+    public function __construct()
+    {
+        $this->conn = mysqli_connect($this->servername, $this->username, $this->password, $this->dbname);
+
+        if(!$this->conn) {
+            die("Falha na conexão: " . mysqli_connect_error());
+        }
+    }
+
+    //função para destruir conexão
+    public function __destruct()
+    {
+        mysqli_close($this->conn);
+    }
+
+    //validação de ra
+    private function validar_ra($ra) {
+        if ($ra < 7) {
+            echo("O RA precisa possuir 7 dígitos");
+            return false;
+        }
+    }
+
+    public function adicionarAluno( $nome, $ra) {
+
+            // Preparando o comando SQL
+            $sql = "INSERT INTO alunos ( `nome`, `ra`) ";
+            $sql = $sql."VALUES ('".$nome."', ".$ra.")";
+        echo $sql;
+            if(mysqli_query($this->conn, $sql)) {
+                echo("Cadastro realizado!");
+            } else {
+                echo("Falha ao realizar o cadastro" . $sql . mysqli_error($this->conn));
+            }
+    }
 }
-// Preparando o comando SQL
-$sql = "INSERT INTO alunos ( `nome`, `ra`) ";
-$sql = $sql."VALUES ('".$nome."', ".$ra.")";
-// echo $sql;
-// Executar o comando SQL
-if (mysqli_query($conn, $sql)) {
-    echo "Cadastro feito com sucesso";
-} else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-// Fechar a conexão
-mysqli_close($conn);
+
+    if(!empty($_POST)) {
+        $nome = $_POST['nome'];
+        $ra = $_POST['ra'];
+        $realizarCadastro = new DataBaseService();
+        $realizarCadastro -> adicionarAluno($nome, $ra);
+    };
+    
 ?>

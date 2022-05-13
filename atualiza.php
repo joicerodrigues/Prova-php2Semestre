@@ -19,9 +19,9 @@
         <input class="form-control" type="text" id="ID" name="ID" placeholder="Digite o ID"><br><br>
         <label for="nome" class="form-label"> Nome:</label>
         <input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
-        <label for="ra" class="form-label">ra:</label>
+        <label for="ra" class="form-label">RA:</label>
         <input class="form-control" type="text" id="ra" name="ra" maxlength=7 placeholder="Digite seu RA"><br><br>
-        <input class="btn btn-primary" type="submit" value="Enviar">
+        <input class="btn btn-primary" type="submit" value="Alterar">
         </div>
     </form>
 </div>
