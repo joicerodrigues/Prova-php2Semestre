@@ -41,7 +41,7 @@ require_once('header.php')
                 <div class="card-body">
                     <h5 class="card-title">Delete um cadastro já feito de seu aluno!</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Deletar</a>
+                    <a href="deletar.php" class="btn btn-primary">Deletar</a>
                 </div>
                 </div>
         </div>

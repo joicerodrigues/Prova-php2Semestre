@@ -13,7 +13,7 @@
     <div class="container pt-5 ps-5">
     <div class="row">
         <div class="col">
-    <form action="update/atualiza2.php" method="post">
+    <form action="delete/deletar2.php" method="post">
         <div class="mb-2">
         <label for="nome" class="form-label"> ID:</label>
         <input class="form-control" type="text" id="ID" name="id" placeholder="Digite o ID"><br><br>
@@ -21,7 +21,7 @@
         <input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
         <label for="ra" class="form-label">RA:</label>
         <input class="form-control" type="text" id="ra" name="ra" maxlength=7 placeholder="Digite seu RA"><br><br>
-        <input class="btn btn-primary" type="submit" value="Alterar">
+        <input class="btn btn-danger" type="submit" value="Deletar">
         </div>
     </form>
 </div>

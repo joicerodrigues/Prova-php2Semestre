@@ -23,32 +23,24 @@ class DataBaseService {
     }
 
     //validação de ra
-    private function validar_ra($ra) {
-        if ($ra < 7) {
-            echo("O RA precisa possuir 7 dígitos");
-            return false;
-        }
-    }
 
-    public function adicionarAluno( $nome, $ra) {
+    public function deletarAluno( $id) {
 
             // Preparando o comando SQL
-            $sql = "INSERT INTO alunos ( `nome`, `ra`) ";
-            $sql = $sql."VALUES ('".$nome."', ".$ra.")";
+            $sql = "DELETE FROM alunos WHERE id = '.$id.'";
         echo $sql;
             if(mysqli_query($this->conn, $sql)) {
-                echo("Cadastro realizado!");
+                echo("Deletado com sucesso!");
             } else {
-                echo("Falha ao realizar o cadastro" . $sql . mysqli_error($this->conn));
+                echo("Falha ao deletar" . $sql . mysqli_error($this->conn));
             }
     }
 }
 
     if(!empty($_POST)) {
-        $nome = $_POST['nome'];
-        $ra = $_POST['ra'];
-        $realizarCadastro = new DataBaseService();
-        $realizarCadastro -> adicionarAluno($nome, $ra);
+        $id = $_POST['id']
+        $deletarCadastro = new DataBaseService();
+        $deletarCadastro -> deletarAluno($id);
     };
     
 ?>
