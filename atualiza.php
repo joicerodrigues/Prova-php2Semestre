@@ -16,7 +16,7 @@
     <form action="update/atualiza2.php" method="post">
         <div class="mb-2">
         <label for="nome" class="form-label"> ID:</label>
-        <input class="form-control" type="text" id="ID" name="id" placeholder="Digite o ID"><br><br>
+        <input class="form-control" type="text" id="ID" name="id" placeholder="Digite o ID correspondente a sua alteração"><br><br>
         <label for="nome" class="form-label"> Nome:</label>
         <input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
         <label for="ra" class="form-label">RA:</label>
@@ -33,5 +33,6 @@
     </div>
 </div>
 </div>
-</body>
-</html>
+<?php
+require_once('footer.php');
+?>

@@ -46,5 +46,7 @@ require_once('header.php')
                 </div>
         </div>
     </div>
-</body>
-</html>
+</div>
+<?php
+require_once('footer.php');
+?>
