@@ -22,15 +22,14 @@ class DataBaseService {
         mysqli_close($this->conn);
     }
 
-    //validação de ra
-
-    public function deletarAluno( $id) {
+    public function deletarAluno($id) {
 
             // Preparando o comando SQL
-            $sql = "DELETE FROM alunos WHERE id = '.$id.'";
-        echo $sql;
+            $sql = "DELETE FROM alunos WHERE id = ".$id."";
+            echo $sql;
+        
             if(mysqli_query($this->conn, $sql)) {
-                echo("Deletado com sucesso!");
+                echo "<script>alert('Email enviado com Sucesso!);</script>";n
             } else {
                 echo("Falha ao deletar" . $sql . mysqli_error($this->conn));
             }
@@ -38,7 +37,7 @@ class DataBaseService {
 }
 
     if(!empty($_POST)) {
-        $id = $_POST['id']
+        $id = $_POST['id'];
         $deletarCadastro = new DataBaseService();
         $deletarCadastro -> deletarAluno($id);
     };
