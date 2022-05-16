@@ -1,4 +1,6 @@
 # Prova PHP orientado a objeto 2º Semestre
+
+<div align=center>
 Prova de php orientado a objeto iniciada em 10/05/2022
 
 ## 👩‍💻 Linguagens utilizadas [🔝](#welcome-badges-4-readmemd-profile)
@@ -9,13 +11,21 @@ Prova de php orientado a objeto iniciada em 10/05/2022
 <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />  
 
 ## ⚡ Database [🔝](#welcome-badges-4-readmemd-profile)
-| <img alt="mysql" src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"> 
+<img alt="mysql" src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"> 
+
 # 
 ![YOUR github stats](https://github-readme-stats.vercel.app/api?username=joicerodrigues)
 
- # Entre em contato
- [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/joicerodrigues000/) [<img src = "https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white">](https://www.instagram.com/joixfr/) 
+ # 📫Entre em contato🔝
+
+<div>
+<a href="https://instagram.com/joixfr" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+<a href = "mailto:joicerodrigues020@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+<a href="https://www.linkedin.com/in/joicerodrigues000" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>   
+<a href="https://twitter.com/brownflxs" target="_blank"><img src="https://img.shields.io/badge/-Twitter-%230077B5?style=for-the-badge&logo=twitter&logoColor=white" target="_blank"></a>   
+</div>
+<br>
 
 # Autora
  [<img src="https://github.com/joicerodrigues.png?size=115" width=115><br><sub>@joicerodrigues</sub>](https://github.com/joicerodrigues) <br><br>
-
+</div>
