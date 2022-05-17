@@ -18,7 +18,7 @@ Vamos utilizar banco de dados MySQL e orientação a objetos para separar o aces
 🔃 Update<br>
 🚮 Delete
 
-## ⚠️Intruções⚠️
+## ⚠️Instruções⚠️
 🔸 O banco de dados foi exportado e se encontra na pasta bd para ser importado
 
 🔸 Ao realizar o git clone é necessário colocar a pasta em xampp/htdocs
