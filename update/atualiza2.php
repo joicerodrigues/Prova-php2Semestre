@@ -30,16 +30,26 @@ class DataBaseService {
         }
     }
 
-    public function alterarAluno( $nome, $ra) {
+    public function alterarAluno($id, $nome, $ra) {
 
             // Preparando o comando SQL
-            $sql = "UPDATE alunos SET nome='".$nome."', ra=".$ra."  WHERE id=".$id."";
-        echo $sql;
-            if(mysqli_query($this->conn, $sql)) {
-                echo("Cadastro atualizado!");
-            } else {
-                echo("Falha ao atualizar o cadastro" . $sql . mysqli_error($this->conn));
-            }
+        $sql = "UPDATE alunos SET nome='$nome', ra='$ra'  WHERE id=$id";
+        $rsp = mysqli_query($this->conn, $sql);
+        if($rsp){
+             // Function definition
+             function function_alert($message) {
+                 // Display the alert box 
+                 echo "<script>alert('$message');</script>";
+             }
+             // Function call
+             header("location: ../atualiza.php");
+             function_alert("Atualizado com sucesso!");
+            return true;
+        }else{
+            return false;
+        }
+    
+    
     }
 }
 
@@ -48,7 +58,7 @@ class DataBaseService {
         $nome = $_POST['nome'];
         $ra = $_POST['ra'];
         $atualizarCadastro = new DataBaseService();
-        $atualizarCadastro -> alterarAluno($nome, $ra);
+        $atualizarCadastro -> alterarAluno($id, $nome, $ra);
     };
     
 ?>

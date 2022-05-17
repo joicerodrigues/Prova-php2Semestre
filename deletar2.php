@@ -23,16 +23,27 @@ class DataBaseService {
     }
 
     public function deletarAluno($id) {
-
-            // Preparando o comando SQL
-            $sql = "DELETE FROM alunos WHERE id = ".$id."";
-            echo $sql;
         
-            if(mysqli_query($this->conn, $sql)) {
-                echo "<script>alert('Email enviado com Sucesso!);</script>";n
-            } else {
-                echo("Falha ao deletar" . $sql . mysqli_error($this->conn));
-            }
+        // Preparando o comando SQL
+        $sql = "DELETE FROM alunos WHERE id = ".$id."";
+        
+        
+        if(mysqli_query($this->conn, $sql)) {
+            // Function definition
+            function function_alert($message) {
+            // Display the alert box 
+            echo "<script>alert('$message');</script>";
+        }
+        
+        // Function call
+        header("location: deletar.php");
+        function_alert("Cadastro deletado com sucesso!");
+        
+
+        } else {
+            echo("Falha ao deletar" . $sql . mysqli_error($this->conn));
+        }    
+
     }
 }
 
@@ -40,6 +51,6 @@ class DataBaseService {
         $id = $_POST['id'];
         $deletarCadastro = new DataBaseService();
         $deletarCadastro -> deletarAluno($id);
-    };
+    };54
     
 ?>

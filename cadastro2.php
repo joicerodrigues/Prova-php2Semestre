@@ -37,7 +37,7 @@ class DataBaseService {
             $sql = $sql."VALUES ('".$nome."', ".$ra.")";
         echo $sql;
             if(mysqli_query($this->conn, $sql)) {
-                echo("Cadastro realizado!");
+                header("location: cadastro.php");
             } else {
                 echo("Falha ao realizar o cadastro" . $sql . mysqli_error($this->conn));
             }

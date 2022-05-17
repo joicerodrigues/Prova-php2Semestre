@@ -13,10 +13,10 @@
     <div class="container pt-5 ps-5">
     <div class="row">
         <div class="col">
-    <form action="delete/deletar2.php" method="post">
+    <form action="deletar2.php" method="post">
         <div class="mb-2">
         <label for="nome" class="form-label"> ID:</label>
-        <input class="form-control" type="text" id="ID" name="id" placeholder="Digite o ID"><br><br>
+        <input class="form-control" type="text" id="ID" name="id" placeholder="Digite o ID" required autofocus><br><br>
         <input class="btn btn-danger" type="submit" value="Deletar">
         </div>
     </form>
@@ -29,6 +29,9 @@
     </div>
 </div>
 </div>
+<style>
+function 
+</style>
 <?php
 require_once('footer.php');
 ?>

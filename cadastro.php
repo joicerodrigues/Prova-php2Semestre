@@ -16,9 +16,9 @@ require_once('header.php')
                 <div class="col">
                     <br><br>
                     <label for="nome" class="form-label"> Nome:</label>
-                    <input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
+                    <input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu nome"required autofocus><br><br>
                     <label for="ra" class="form-label">RA:</label>
-                    <input class="form-control" type="text" id="ra" name="ra" maxlength=7 placeholder="Digite seu RA"><br><br>
+                    <input class="form-control" type="text" id="ra" name="ra" maxlength=7 placeholder="Digite seu RA" required autofocus><br><br>
                     <input class="btn btn-primary" type="submit" value="Enviar">
                 </div>
                 <div class="col">
