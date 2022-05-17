@@ -10,7 +10,6 @@ class DataBaseService {
     public function __construct()
     {
         $this->conn = mysqli_connect($this->servername, $this->username, $this->password, $this->dbname);
-
         if(!$this->conn) {
             die("Falha na conexão: " . mysqli_connect_error());
         }
@@ -30,26 +29,25 @@ class DataBaseService {
         }
     }
 
+    //função para alterar aluno
     public function alterarAluno($id, $nome, $ra) {
 
-            // Preparando o comando SQL
+        // Preparando o comando SQL
         $sql = "UPDATE alunos SET nome='$nome', ra='$ra'  WHERE id=$id";
         $rsp = mysqli_query($this->conn, $sql);
         if($rsp){
              // Function definition
              function function_alert($message) {
-                 // Display the alert box 
+             // Display the alert box 
                  echo "<script>alert('$message');</script>";
              }
-             // Function call
-             header("location: ../atualiza.php");
-             function_alert("Atualizado com sucesso!");
-            return true;
+        // Function call
+        header("location: ../src/atualiza.php");
+        function_alert("Atualizado com sucesso!");
+        return true;
         }else{
             return false;
-        }
-    
-    
+        }   
     }
 }
 

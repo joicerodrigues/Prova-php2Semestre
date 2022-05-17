@@ -3,6 +3,29 @@
 <div align=center>
 Prova de php orientado a objeto iniciada em 10/05/2022
 
+## 🏫Cadastro de alunos🔝
+Nesse cadastro, teremos as seguintes informações:
+<br>
+ Ra
+<br>
+ Nome
+<br>
+Vamos utilizar banco de dados MySQL e orientação a objetos para separar o acesso ao banco de dados.
+
+## 💮CRUD🔝
+✏️  Create<br>
+📄 Read<br>
+🔃 Update<br>
+🚮 Delete
+
+## ⚠️Intruções⚠️
+🔸 O banco de dados foi exportado e se encontra na pasta bd para ser importado
+
+🔸 Ao realizar o git clone é necessário colocar a pasta em xampp/htdocs
+
+🔸 Também é necessário para funcionamento estar com o xampp startado em apache e mysql
+
+
 ## 👩‍💻 Linguagens utilizadas [🔝](#welcome-badges-4-readmemd-profile)
  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" /> 
  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />  

@@ -6,11 +6,11 @@ require_once('header.php')
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passagem de Parâmetros via POST</title>
+    <title>Cadastro de alunos</title>
 </head>
 <body>
 <div class="container">
-    <form action="cadastro2.php" method="post">
+    <form action="../create/cadastro2.php" method="post">
         <div class="mb-3">
             <div class="row">
                 <div class="col">
@@ -22,7 +22,7 @@ require_once('header.php')
                     <input class="btn btn-primary" type="submit" value="Enviar">
                 </div>
                 <div class="col">
-                    <img src="images/cad.png" height="550px" widht="550px">
+                    <img src="../images/cad.png" height="550px" widht="550px">
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 <?php 
-require_once('header.php')
+require_once('src/header.php')
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,7 @@ require_once('header.php')
                 <div class="card-body">
                     <h5 class="card-title">Realize um cadastro para o seu aluno!</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="cadastro.php" class="btn btn-primary">Cadastrar</a>
+                    <a href="src/cadastro.php" class="btn btn-primary">Cadastrar</a>
                 </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@ require_once('header.php')
                 <div class="card-body">
                     <h5 class="card-title">Atualize um cadastro já feito de seu aluno!</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="atualiza.php" class="btn btn-primary">Atualizar</a>
+                    <a href="src/atualiza.php" class="btn btn-primary">Atualizar</a>
                 </div>
                 </div>
             </div>
@@ -41,12 +41,12 @@ require_once('header.php')
                 <div class="card-body">
                     <h5 class="card-title">Delete um cadastro já feito de seu aluno!</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="deletar.php" class="btn btn-primary">Deletar</a>
+                    <a href="src/deletar.php" class="btn btn-primary">Deletar</a>
                 </div>
                 </div>
         </div>
     </div>
 </div>
 <?php
-require_once('footer.php');
+require_once('src/footer.php');
 ?>

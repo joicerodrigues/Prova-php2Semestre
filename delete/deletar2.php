@@ -36,7 +36,7 @@ class DataBaseService {
         }
         
         // Function call
-        header("location: deletar.php");
+        header("location: ../src/deletar.php");
         function_alert("Cadastro deletado com sucesso!");
         
 
