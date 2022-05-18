@@ -30,14 +30,14 @@ class DataBaseService {
         }
     }
 
-    public function adicionarAluno( $nome, $ra) {
+    public function adicionarAluno( $nome, $ra, $sobrenome) {
 
             // Preparando o comando SQL
-            $sql = "INSERT INTO alunos ( `nome`, `ra`) ";
-            $sql = $sql."VALUES ('".$nome."', ".$ra.")";
+            $sql = "INSERT INTO alunos ( `nome`, `ra`, `sobrenome`) ";
+            $sql = $sql."VALUES ('".$nome."', ".$ra.", '".$sobrenome."') ";
         echo $sql;
             if(mysqli_query($this->conn, $sql)) {
-                header("location: ../src/cadastro.php");
+                header("location: ../src/cadastro.php?status=sucess");
             } else {
                 echo("Falha ao realizar o cadastro" . $sql . mysqli_error($this->conn));
             }
@@ -47,8 +47,9 @@ class DataBaseService {
     if(!empty($_POST)) {
         $nome = $_POST['nome'];
         $ra = $_POST['ra'];
+        $sobrenome = $_POST['sobrenome'];
         $realizarCadastro = new DataBaseService();
-        $realizarCadastro -> adicionarAluno($nome, $ra);
+        $realizarCadastro -> adicionarAluno($nome, $ra, $sobrenome);
     };
     
 ?>

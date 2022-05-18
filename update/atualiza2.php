@@ -30,24 +30,11 @@ class DataBaseService {
     }
 
     //função para alterar aluno
-    public function alterarAluno($id, $nome, $ra) {
-
+    public function alterarAluno($id, $nome, $ra, $sobrenome) {
         // Preparando o comando SQL
-        $sql = "UPDATE alunos SET nome='$nome', ra='$ra'  WHERE id=$id";
-        $rsp = mysqli_query($this->conn, $sql);
-        if($rsp){
-             // Function definition
-             function function_alert($message) {
-             // Display the alert box 
-                 echo "<script>alert('$message');</script>";
-             }
-        // Function call
-        header("location: ../src/atualiza.php");
-        function_alert("Atualizado com sucesso!");
-        return true;
-        }else{
-            return false;
-        }   
+        $sql = "UPDATE `alunos` SET nome='$nome', ra='$ra', sobrenome='$sobrenome'  WHERE id='$id'";
+        mysqli_query($this->conn, $sql);
+        header("location: ../src/atualiza.php?status=sucess");  
     }
 }
 
@@ -55,8 +42,9 @@ class DataBaseService {
         $id = $_POST['id'];
         $nome = $_POST['nome'];
         $ra = $_POST['ra'];
+        $sobrenome = $_POST['sobrenome'];
         $atualizarCadastro = new DataBaseService();
-        $atualizarCadastro -> alterarAluno($id, $nome, $ra);
+        $atualizarCadastro -> alterarAluno($id, $nome, $ra, $sobrenome);
     };
     
 ?>

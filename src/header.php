@@ -12,23 +12,23 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.php"><img src="../images/ico.png"></a>
+    <a class="navbar-brand" href="index.php"><img src="https://i.ibb.co/mHRqbyh/ico.png" widht="50px" height="50px"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="cadastro.php">Cadastrar</a>
+          <a class="nav-link active" href="../src/cadastro.php">Cadastrar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="atualiza.php">Atualizar</a>
+          <a class="nav-link active" aria-current="page" href="../src/atualiza.php">Atualizar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="deletar.php">Deletar</a>
+          <a class="nav-link active" aria-current="page" href="../src/deletar.php">Deletar</a>
         </li>
       </ul>
       <form class="d-flex">

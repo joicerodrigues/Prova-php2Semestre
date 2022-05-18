@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 17-Maio-2022 às 20:15
+-- Tempo de geração: 18-Maio-2022 às 02:44
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.26
 
@@ -30,15 +30,16 @@ SET time_zone = "+00:00";
 CREATE TABLE `alunos` (
   `id` int(15) NOT NULL,
   `nome` varchar(50) DEFAULT NULL,
-  `ra` int(7) DEFAULT NULL
+  `ra` int(7) DEFAULT NULL,
+  `sobrenome` varchar(60) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `alunos`
 --
 
-INSERT INTO `alunos` (`id`, `nome`, `ra`) VALUES
-(33, 'daise', 0);
+INSERT INTO `alunos` (`id`, `nome`, `ra`, `sobrenome`) VALUES
+(43, '', 0, 'asçaldlaçslçassçdalasçdko');
 
 --
 -- Índices para tabelas despejadas
@@ -58,7 +59,7 @@ ALTER TABLE `alunos`
 -- AUTO_INCREMENT de tabela `alunos`
 --
 ALTER TABLE `alunos`
-  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

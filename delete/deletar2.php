@@ -36,7 +36,7 @@ class DataBaseService {
         }
         
         // Function call
-        header("location: ../src/deletar.php");
+        header("location: ../src/deletar.php?status=sucess");
         function_alert("Cadastro deletado com sucesso!");
         
 
@@ -51,6 +51,6 @@ class DataBaseService {
         $id = $_POST['id'];
         $deletarCadastro = new DataBaseService();
         $deletarCadastro -> deletarAluno($id);
-    };54
+    };
     
 ?>

@@ -10,15 +10,17 @@
     <title>Atualizar cadastros</title>
 </head>
 <body>
-    <div class="container pt-5 ps-5">
+    <div class="container">
     <div class="row">
         <div class="col">
     <form action="../update/atualiza2.php" method="post">
         <div class="mb-2">
         <label for="nome" class="form-label"> ID:</label>
-        <input class="form-control" type="text" id="ID" name="id" placeholder="Digite o ID correspondente a sua alteração"><br><br>
+        <input class="form-control" type="text" id="id" name="id" placeholder="Digite o ID correspondente a sua alteração" required focus><br><br>
         <label for="nome" class="form-label"> Nome:</label>
         <input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
+        <label for="nome" class="form-label"> Sobrenome:</label>
+        <input class="form-control" type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome"><br><br>
         <label for="ra" class="form-label">RA:</label>
         <input class="form-control" type="text" id="ra" name="ra" maxlength=7 placeholder="Digite seu RA"><br><br>
         <input class="btn btn-primary" type="submit" value="Alterar">
